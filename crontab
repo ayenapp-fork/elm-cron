@@ -1,3 +1,1 @@
-* * * * * curl https://www.google.com >/proc/1/fd/1 2>/proc/1/fd/2
-
-# An empty line is required at the end of this file for a valid cron file.
+0 */2 * * * curl -H "Authorization: JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzA3MDgwODEzLCJpYXQiOjE3MDcwMzc2MTMsImp0aSI6IjA2ZmZhZDAzOWE2ODQ5MDZhNDBmMGNmOTAwODMzYWI5IiwidXNlcl9pZCI6MX0.L3Ymz4gXkhNa9ApoUh69YcT15XKFWzcGRje_d7lOv5I" https://alpha.inspector.ayen.app/api/v1/rasid/orders/ >/proc/1/fd/1 2>/proc/1/fd/2
