@@ -1,3 +1,6 @@
-0 */2 * * * curl -H "Authorization: JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzA3MDgwODEzLCJpYXQiOjE3MDcwMzc2MTMsImp0aSI6IjA2ZmZhZDAzOWE2ODQ5MDZhNDBmMGNmOTAwODMzYWI5IiwidXNlcl9pZCI6MX0.L3Ymz4gXkhNa9ApoUh69YcT15XKFWzcGRje_d7lOv5I" https://alpha.inspector.ayen.app/api/v1/rasid/orders/ >/proc/1/fd/1 2>/proc/1/fd/2
+* 8 * * * ccurl -X POST https://alpha.inspector.ayen.app/api/v1/rasid/orders -H 'Content-Type: application/json' -d '{"email":"rasid_user@ayen.app","password":">X=L6,pLf7y2f}O2/-e2"}' >/proc/1/fd/1 2>/proc/1/fd/2
+* 10 * * * ccurl -X POST https://alpha.inspector.ayen.app/api/v1/rasid/orders -H 'Content-Type: application/json' -d '{"email":"rasid_user@ayen.app","password":">X=L6,pLf7y2f}O2/-e2"}' >/proc/1/fd/1 2>/proc/1/fd/2
+* 15 * * * ccurl -X POST https://alpha.inspector.ayen.app/api/v1/rasid/orders -H 'Content-Type: application/json' -d '{"email":"rasid_user@ayen.app","password":">X=L6,pLf7y2f}O2/-e2"}' >/proc/1/fd/1 2>/proc/1/fd/2
+* 17 * * * ccurl -X POST https://alpha.inspector.ayen.app/api/v1/rasid/orders -H 'Content-Type: application/json' -d '{"email":"rasid_user@ayen.app","password":">X=L6,pLf7y2f}O2/-e2"}' >/proc/1/fd/1 2>/proc/1/fd/2
 
 # An empty line is required at the end of this file for a valid cron file.
