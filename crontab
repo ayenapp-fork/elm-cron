@@ -1,5 +1,6 @@
 * 8 * * * ccurl -X POST https://alpha.inspector.ayen.app/api/v1/rasid/orders -H 'Content-Type: application/json' -d '{"email":"rasid_user@ayen.app","password":">X=L6,pLf7y2f}O2/-e2"}' >/proc/1/fd/1 2>/proc/1/fd/2
 * 10 * * * ccurl -X POST https://alpha.inspector.ayen.app/api/v1/rasid/orders -H 'Content-Type: application/json' -d '{"email":"rasid_user@ayen.app","password":">X=L6,pLf7y2f}O2/-e2"}' >/proc/1/fd/1 2>/proc/1/fd/2
+* 12 * * * ccurl -X POST https://alpha.inspector.ayen.app/api/v1/rasid/orders -H 'Content-Type: application/json' -d '{"email":"rasid_user@ayen.app","password":">X=L6,pLf7y2f}O2/-e2"}' >/proc/1/fd/1 2>/proc/1/fd/2
 * 15 * * * ccurl -X POST https://alpha.inspector.ayen.app/api/v1/rasid/orders -H 'Content-Type: application/json' -d '{"email":"rasid_user@ayen.app","password":">X=L6,pLf7y2f}O2/-e2"}' >/proc/1/fd/1 2>/proc/1/fd/2
 * 17 * * * ccurl -X POST https://alpha.inspector.ayen.app/api/v1/rasid/orders -H 'Content-Type: application/json' -d '{"email":"rasid_user@ayen.app","password":">X=L6,pLf7y2f}O2/-e2"}' >/proc/1/fd/1 2>/proc/1/fd/2
 
