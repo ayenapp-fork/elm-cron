@@ -1,21 +1,19 @@
-FROM ubuntu:22.04
+FROM ubuntu:latest
+MAINTAINER docker@ekito.fr
 
-RUN apt-get update \
-    && DEBIAN_FRONTEND=noninteractive apt-get -y --no-install-recommends install -y cron curl ca-certificates \
-    # Remove package lists for smaller image sizes
-    && rm -rf /var/lib/apt/lists/* \
-    && which cron \
-    && rm -rf /etc/cron.*/*
+RUN apt-get update && apt-get -y install cron
 
-COPY crontab /hello-cron
-COPY entrypoint.sh /entrypoint.sh
+# Copy hello-cron file to the cron.d directory
+COPY crontab /etc/cron.d/hello-cron
+ 
+# Give execution rights on the cron job
+RUN chmod 0644 /etc/cron.d/hello-cron
 
-RUN crontab hello-cron
-RUN chmod +x entrypoint.sh
-
-ENTRYPOINT ["/entrypoint.sh"]
-
-# https://manpages.ubuntu.com/manpages/trusty/man8/cron.8.html
-# -f | Stay in foreground mode, don't daemonize.
-# -L loglevel | Tell  cron  what to log about jobs (errors are logged regardless of this value) as the sum of the following values:
-CMD ["cron","-f", "-L", "2"]
+# Apply cron job
+RUN crontab /etc/cron.d/hello-cron
+ 
+# Create the log file to be able to run tail
+RUN touch /var/log/cron.log
+ 
+# Run the command on container startup
+CMD cron && tail -f /var/log/cron.log
