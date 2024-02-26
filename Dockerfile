@@ -1,7 +1,7 @@
 FROM ubuntu:latest
 MAINTAINER docker@ekito.fr
 
-RUN apt-get update && apt-get -y install cron
+RUN apt-get update && apt-get -y install cron curl
 
 # Copy hello-cron file to the cron.d directory
 COPY crontab /etc/cron.d/hello-cron
