@@ -1,7 +1,7 @@
-* 8 * * * curl -X POST https://inspector.ayen.app/api/v1/rasid/orders/ -H 'Content-Type: application/json' -d '{"email":"rasid_user@ayen.app","password":">X=L6,pLf7y2f}O2/-e2"}' >/proc/1/fd/1 2>/proc/1/fd/2
-* 10 * * * curl -X POST https://inspector.ayen.app/api/v1/rasid/orders/ -H 'Content-Type: application/json' -d '{"email":"rasid_user@ayen.app","password":">X=L6,pLf7y2f}O2/-e2"}' >/proc/1/fd/1 2>/proc/1/fd/2
-* 12 * * * curl -X POST https://inspector.ayen.app/api/v1/rasid/orders/ -H 'Content-Type: application/json' -d '{"email":"rasid_user@ayen.app","password":">X=L6,pLf7y2f}O2/-e2"}' >/proc/1/fd/1 2>/proc/1/fd/2
-* 15 * * * curl -X POST https://inspector.ayen.app/api/v1/rasid/orders/ -H 'Content-Type: application/json' -d '{"email":"rasid_user@ayen.app","password":">X=L6,pLf7y2f}O2/-e2"}' >/proc/1/fd/1 2>/proc/1/fd/2
-* 17 * * * curl -X POST https://inspector.ayen.app/api/v1/rasid/orders/ -H 'Content-Type: application/json' -d '{"email":"rasid_user@ayen.app","password":">X=L6,pLf7y2f}O2/-e2"}' >/proc/1/fd/1 2>/proc/1/fd/2
+0 8 * * * curl -X POST https://inspector.ayen.app/api/v1/rasid/orders/ -H 'Content-Type: application/json' -d '{"email":"rasid_user@ayen.app","password":">X=L6,pLf7y2f}O2/-e2"}' >/dev/null 2>&1
+0 10 * * * curl -X POST https://inspector.ayen.app/api/v1/rasid/orders/ -H 'Content-Type: application/json' -d '{"email":"rasid_user@ayen.app","password":">X=L6,pLf7y2f}O2/-e2"}' >/dev/null 2>&1
+0 12 * * * curl -X POST https://inspector.ayen.app/api/v1/rasid/orders/ -H 'Content-Type: application/json' -d '{"email":"rasid_user@ayen.app","password":">X=L6,pLf7y2f}O2/-e2"}' >/dev/null 2>&1
+0 15 * * * curl -X POST https://inspector.ayen.app/api/v1/rasid/orders/ -H 'Content-Type: application/json' -d '{"email":"rasid_user@ayen.app","password":">X=L6,pLf7y2f}O2/-e2"}' >/dev/null 2>&1
+0 17 * * * curl -X POST https://inspector.ayen.app/api/v1/rasid/orders/ -H 'Content-Type: application/json' -d '{"email":"rasid_user@ayen.app","password":">X=L6,pLf7y2f}O2/-e2"}' >/dev/null 2>&1
 
 # An empty line is required at the end of this file for a valid cron file.
